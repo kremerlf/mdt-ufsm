@@ -24,7 +24,11 @@ right=2cm]{geometry}							%% SELECAO MARGENS
 \usepackage{indentfirst}						%% IDENTA O PRIMEIRO PARAGRAFO DE CADA SECAO
 %\usepackage[brazilian,hyperpageref]{backref}	%% PAGINAS COM CITACOES NA BIBLIO
 %\usepackage[alf]{abntex2cite}					%% CITACOES PADRAO ABNT
-\usepackage[alf,recuo=0.0cm,abnt-etal-cite=2,abnt-etal-list=3,abnt-emphasize=bf,abnt-repeated-author-omit=yes,abnt-thesis-year=both,abnt-etal-text=default,abnt-and-type=e,abnt-full-initials=no,bibjustif]{abntex2cite} %% MDT
+\usepackage[alf,recuo=0.0cm,abnt-etal-cite=2,abnt-etal-list=3,
+            abnt-emphasize=bf,abnt-repeated-author-omit=yes,
+            abnt-thesis-year=both,abnt-etal-text=default,
+            abnt-and-type=e,abnt-full-initials=no,
+            bibjustif]{abntex2cite} %% MDT
 \usepackage{subfig} 							%% PARA FIGURAS LADO1 A LADO
 \usepackage{multirow} 							%% TABELAS MULTICOLUNAS
 \usepackage{tablefootnote}	%% footnote em tabelass
@@ -50,7 +54,7 @@ right=2cm]{geometry}							%% SELECAO MARGENS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%	ARQUIVOS EXTERNOS NAO TEXTUAIS
 %
-\include{comandos}							%% COMANDOS PERSONALIZADOS DO USUARIO (se tiver um)
+\include{comandos}						%% COMANDOS PERSONALIZADOS DO USUARIO (se tiver um)
 \include{dados}								%% DADOS SOBRE O TRABALHO
 \include{capa}								%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
 \include{folhaderosto}	
@@ -62,21 +66,21 @@ right=2cm]{geometry}							%% SELECAO MARGENS
 \begin{document}
 %
 \imprimircapa 								%% COMANDO LITERAL ABNTEX2
-\imprimirfolhaderosto 						%% COMANDO LITERAL ABNTEX2
+\imprimirfolhaderosto 				%% COMANDO LITERAL ABNTEX2
 \include{fichacatalografica}
-\include{folhadeaprovacao}					%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{folhadeaprovacao}		%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
 \linespread{1.5}
-\include{dedicatoria}						%% MODELO JUNTO AO DOCUMENTO PRINCIPAL5
-\include{agradecimentos}					%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\include{epigrafe}							%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{dedicatoria}					%% MODELO JUNTO AO DOCUMENTO PRINCIPAL5
+\include{agradecimentos}			%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{epigrafe}						%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
 \include{resumo}							%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\include{abstract}							%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{abstract}						%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
 \listoffigures*								%% O * RETIRA A LISTA DO SUMARIO
 \cleardoublepage
 \listoftables*
 \cleardoublepage
 \tableofcontents*							%% IMPRIME SUMARIO
-\clearpage									%% retira numeração de pagina do sumario
+\clearpage									  %% retira numeração de pagina do sumario
 \textual
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -97,7 +101,6 @@ right=2cm]{geometry}							%% SELECAO MARGENS
 %%% APENDICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 
 %
-
 % \begin{apendicesenv}
 % \include{apend-KH-teo}
 % \end{apendicesenv}
