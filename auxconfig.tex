@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ESTILOS APLICADOS NOS TITULOS
+%
+\renewcommand{\ABNTEXchapterfont}{\sffamily}
+\renewcommand{\ABNTEXchapterfontsize}{\normalfont\bfseries}
+
+\renewcommand{\ABNTEXsectionfont}{\sffamily}
+\renewcommand{\ABNTEXsectionfontsize}{\normalfont}
+
+\renewcommand{\ABNTEXsubsectionfont}{\sffamily}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalfont\bfseries}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\sffamily}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalfont\itshape}
+
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\sffamily}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
+% Estilos aplicados nos titulos que aparecem no sumario
+\renewcommand{\cftchapterfont}{\bfseries}
+\renewcommand{\cftsectionfont}{\normalfont}
+\renewcommand{\cftsubsectionfont}{\bfseries}
+\renewcommand{\cftsubsubsectionfont}{\normalfont}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DECLARACOES CABECALHO DO ABNTEX2
+% -----
+% Cabecalho padrao
+\makeevenhead{abntheadings}{\footnotesize\thepage}{}{}
+\makeoddhead{abntheadings}{}{}{\footnotesize\thepage}
+\makeheadrule{abntheadings}{\textwidth}{0pt}
+%
+% Cabecalho do inicio do capitulo
+\makeoddhead{abntchapfirst}{}{}{}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength\parindent{1.25cm}
+\setlength\afterchapskip{18pt}
+\setlength\aftersecskip{18pt}
+\setlength\aftersubsecskip{18pt}
+\setlength\aftersubsubsecskip{18pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% caption e fonte MDT style 
+\captionsetup{justification=centering,font=small}
+% caption para fonte
+\newcommand{\source}[1]{\caption*{Fonte: {#1}}} 
