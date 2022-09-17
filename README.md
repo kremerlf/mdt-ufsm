@@ -3,4 +3,6 @@
 
 O arquivo principal.tex é o .tex para compilação.
 
+Dados como autor e orientador estão no arquivo *configs/dados.tex*
+
 
