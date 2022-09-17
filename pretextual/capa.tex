@@ -1,0 +1,33 @@
+\renewcommand{\imprimircapa}{%
+\begin{capa}%
+\center
+% cabecalho letra 14pt 
+\begingroup
+    \fontsize{14pt}{14pt}\selectfont
+    \imprimirinstituicao
+\endgroup
+\vspace{8em}
+
+% oito espaços simples depois do cabecalho fonte 14pt
+\begingroup
+    \fontsize{14pt}{14pt}\selectfont
+    \imprimirautor
+\endgroup
+\vspace{8em}
+
+%titulo fonte 14pt negrito, 8 espacos simples depois autor
+% nao pode ter mais de 3 linhas 
+\begingroup
+    \fontsize{14pt}{14pt}\selectfont
+    \textbf{\expandafter\MakeUppercase\expandafter{\imprimirtitulo}}
+\endgroup
+\vfill
+
+%fica na margem inferior
+\begingroup
+    \fontsize{14pt}{14pt}\selectfont
+    \imprimirlocal\\
+    \imprimirdata
+\endgroup
+\end{capa}
+}

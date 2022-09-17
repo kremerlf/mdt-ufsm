@@ -1,0 +1,40 @@
+\setcounter{page}{1}
+\renewcommand{\imprimirfolhaderosto}{%
+\begin{folhaderosto}%
+\center
+\begingroup
+    \fontsize{12pt}{12pt}\selectfont
+    \imprimirautor
+\endgroup
+\vspace{7em}
+
+\begingroup
+    \fontsize{12pt}{12pt}\selectfont
+    \linespread{1.5}
+    \textbf{\expandafter\MakeUppercase\expandafter{\imprimirtitulo}}
+\endgroup
+\vspace{7em}
+%
+%% Alterar conforme pagina 24 da MDT
+%
+\begin{flushright}
+\begin{minipage}{.50\textwidth}\linespread{1.0}
+Tese apresentada ao Programa de Pós-Graduação em Física da Universidade Federal de Santa Maria (UFSM, RS), como requisito parcial para obtenção do grau de Doutor em Física.
+\end{minipage}
+\end{flushright}
+\vspace{10em} 
+
+\begingroup
+    \fontsize{12pt}{12pt}\selectfont
+    Orientador: \imprimirorientador
+\endgroup
+\vfill
+
+\begingroup
+    \fontsize{12pt}{12pt}\selectfont
+ 	\imprimirlocal \\
+	\imprimirdata
+\endgroup
+
+\end{folhaderosto}
+}
