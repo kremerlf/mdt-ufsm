@@ -1,1 +1,1 @@
-Arquivos textuais
+Arquivos textuais, desenvolvimento geral do trabalho
