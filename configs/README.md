@@ -1,0 +1,1 @@
+Arquivos com configurações auxiliares
