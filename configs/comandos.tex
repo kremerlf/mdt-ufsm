@@ -1,0 +1,48 @@
+
+%% arquivo completamente opcional, feito pra minha preguiça de digitar
+
+%%%%%%%%%%%%%% \newcommand{\meucomando}{\comandoaserrealizado} --- %
+%%%%%%%%%%%%%%---------------------------------------------------- %
+
+% --- DIRAC NOTATION --- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bra}[1]{\ensuremath{\left\langle#1\right|}}
+\newcommand{\ket}[1]{\ensuremath{\left|#1\right\rangle}}
+\newcommand{\bracket}[2]{\ensuremath{\left\langle#1 \vphantom{#2}\right| \left. #2 \vphantom{#1}\right\rangle}}
+\newcommand{\matrixel}[3]{\ensuremath{\left\langle #1 \vphantom{#2#3} \right| #2 \left| #3 \vphantom{#1#2} \right\rangle}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- DERIVADAS PRIMEIRAS --- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ddx}{\frac{\partial}{\partial x}}
+\newcommand{\ddy}{\frac{\partial}{\partial y}}
+\newcommand{\ddz}{\frac{\partial}{\partial z}}
+\newcommand{\ddr}{\frac{\partial}{\partial r}}
+\newcommand{\ddtheta}{\frac{\partial}{\partial \theta}}
+\newcommand{\ddrho}{\frac{\partial}{\partial \rho}}
+\newcommand{\ddt}{\frac{\partial}{\partial t}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- DERIVADAS SEGUNDAS --- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dddx}{\frac{\partial^2}{\partial x^2}}
+\newcommand{\dddy}{\frac{\partial^2}{\partial y^2}}
+\newcommand{\dddz}{\frac{\partial^2}{\partial z^2}}
+\newcommand{\dddr}{\frac{\partial^2}{\partial r^2}}
+\newcommand{\dddtheta}{\frac{\partial^2}{\partial \theta^2}}
+\newcommand{\dddrho}{\frac{\partial^2}{\partial \rho^2}}
+\newcommand{\dddt}{\frac{\partial^2}{\partial \t^2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\comut}[2]{\left[#1,#2\right]}
+
+%%%%%%%%%%%%%%
+\newcommand{\rR}{(\vec{r},\vec{R})} % coordenadas eletronicas e nucleares
+\newcommand{\angstrom}{\textup{\AA}} %% angstrom
+\newcommand{\den}{\rho(\vec{r})} 
+\newcommand{\deno}{\rho_0(\vec{r})}
+\newcommand{\vr}{\vec{r}}
+\newcommand{\vrl}{\vec{r}'}
+
+%%%%%%%%%%%% PALAVRAS ESTRANGEIRAS UTEIS
+\usepackage{xspace}
+\newcommand{\armchair}{\textit{armchair}\xspace}
+\newcommand{\zigzag}{\textit{zigzag}\xspace}
+\newcommand{\gap}{\textit{gap}\xspace}
+\newcommand{\bulk}{\textit{bulk}\xspace}
+\newcommand{\exchange}{\textit{exchange}\xspace}
+\newcommand{\software}{\textit{software}\xspace}
