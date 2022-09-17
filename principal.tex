@@ -5,9 +5,9 @@
 %% PACOTES
 %
 \usepackage[bottom=2cm,top=3cm,
-            left=3cm,right=2cm]{geometry} %% MARGENS
+            left=3cm,right=2cm]{geometry}
 \usepackage[T1]{fontenc}			
-\usepackage{newtxtext,newtxmath}	%% times new roman text e math
+\usepackage{newtxtext,newtxmath} %% times new roman text e math
 \usepackage[utf8]{inputenc}			
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -15,38 +15,35 @@
 \usepackage{makeidx}
 \usepackage{color}					
 \usepackage{graphicx}				
-\usepackage{microtype}				%% MELHORIAS DE JUSTIFICACAO
+\usepackage{microtype}	%% MELHORIAS DE JUSTIFICACAO
 \usepackage{indentfirst}			
 \usepackage[alf,recuo=0.0cm,abnt-etal-cite=2,abnt-etal-list=3,
             abnt-emphasize=bf,abnt-repeated-author-omit=yes,
             abnt-thesis-year=both,abnt-etal-text=default,
             abnt-and-type=e,abnt-full-initials=no,
-            bibjustif]{abntex2cite} %% MDT
+            bibjustif]{abntex2cite} %% ~MDT
 %
 %% utils
 %
-\usepackage{subfig} 				%% PARA FIGURAS LADO1 A LADO
-\usepackage{multirow} 				%% TABELAS MULTICOLUNAS
-\usepackage{tablefootnote}	        %% footnote em tabelass
-
+\usepackage{subfig} 				
+\usepackage{multirow} 				
+\usepackage{tablefootnote}	        
 \usepackage{pgf}
 \usepackage{lipsum}
 \usepackage{multicol}
 %
-\newtheorem{teo}{Teorema} 			%% DEFINICAO PARA TEOREMAS
-%
 %% CONFIGURACOES AUXILIARES 
 %
-\input{auxconfig}
+\input{configs/auxconfig}
 %
 \pretextual
 %
 %%	ARQUIVOS EXTERNOS NAO TEXTUAIS
 %
-\input{comandos}		%% COMANDOS PERSONALIZADOS DO USUARIO (se tiver um)
-\input{dados}			%% DADOS SOBRE O TRABALHO
-\input{capa}			%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\input{folhaderosto}	%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\input{configs/comandos}		%% COMANDOS PERSONALIZADOS DO USUARIO (se tiver um)
+\input{configs/dados}			%% DADOS SOBRE O TRABALHO
+\input{pretextual/capa}			%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\input{pretextual/folhaderosto}	%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
 %
 %%
 %
@@ -55,36 +52,36 @@
 %
 \imprimircapa 					%% COMANDO LITERAL ABNTEX2
 \imprimirfolhaderosto 			%% COMANDO LITERAL ABNTEX2
-\include{fichacatalografica}
-\include{folhadeaprovacao}		%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{pretextual/fichacatalografica}
+\include{pretextual/folhadeaprovacao} %% MODELO JUNTO AO DOCUMENTO PRINCIPAL
 \linespread{1.5}
-\include{dedicatoria}			%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\include{agradecimentos}		%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\include{epigrafe}				%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\include{resumo}				%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\include{abstract}				%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
-\listoffigures*					%% O * RETIRA A LISTA DO SUMARIO
+\include{pretextual/dedicatoria}		%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{pretextual/agradecimentos}		%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{pretextual/epigrafe}			%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{pretextual/resumo}				%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\include{pretextual/abstract}			%% MODELO JUNTO AO DOCUMENTO PRINCIPAL
+\listoffigures*	%% O * retira listas do sumario 
 \cleardoublepage
 \listoftables*
 \cleardoublepage
-\tableofcontents*				%% IMPRIME SUMARIO
-\clearpage						%% retira numeração de pagina do sumario
+\tableofcontents*	%% imprime sumario
+\clearpage			%% retira numeração de pagina do sumario
 \textual
 %
 %% TEXTO
 %
-\include{intro}
-\include{capt2}
-\include{capt3}
+\include{textual/intro}
+\include{textual/capt2}
+\include{textual/capt3}
 %
 %% REFERENCIAS
 %
 \postextual
-\bibliography{ref.bib}
+\bibliography{postextual/ref.bib}
 %
 %% APENDICES 
 %
 % \begin{apendicesenv}
-% \include{apend-KH-teo}
+% \include{apend}
 % \end{apendicesenv}
 \end{document}
